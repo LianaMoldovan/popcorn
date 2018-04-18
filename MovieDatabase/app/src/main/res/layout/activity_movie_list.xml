@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_list_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".views.movie.MovieListActivity">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/search_movie_title"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin_content_double"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_width="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/material_text_display1"
+        android:textStyle="normal"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:clipToPadding="false"
+        android:id="@+id/recycler_movies"
+        android:layout_below="@id/search_movie_title"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_content_double"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/search_movie_title"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:indeterminateTintMode="src_in"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font sizes -->
+    <dimen name="material_text_caption">12sp</dimen>
+    <dimen name="material_text_caption2">9sp</dimen>
+    <dimen name="material_text_body1">14sp</dimen>
+    <dimen name="material_text_body2">13sp</dimen>
+    <dimen name="material_text_title">20sp</dimen>
+    <dimen name="material_text_headline">24sp</dimen>
+    <dimen name="material_text_display1">34sp</dimen>
+    <dimen name="material_text_display2">45sp</dimen>
+    <dimen name="material_text_display3">56sp</dimen>
+    <dimen name="material_text_display4">112sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_content_double">32dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+
+    <dimen name="paddingItemDefault">8dp</dimen>
+
+    <!--Home screen-->
+    <dimen name="carousel_item_width">121dp</dimen>
+    <dimen name="carousel_item_height">178dp</dimen>
+
+    <!--Movie list-->
+    <dimen name="movie_item_height">120dp</dimen>
+    <dimen name="poster_thumb_width">82dp</dimen>
+    <dimen name="poster_thumb_height">120dp</dimen>
+
+    <dimen name="poster_movie_height">150dp</dimen>
+
+</resources>

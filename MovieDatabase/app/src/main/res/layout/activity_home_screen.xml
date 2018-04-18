@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_margin">
+
+    <EditText
+        android:hint="@string/search_field_hint"
+        android:id="@+id/search_field"
+        android:inputType="text"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_margin_content_double"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/paddingItemDefault"
+        android:textSize="@dimen/material_text_headline"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/search_btn_txt"
+        android:id="@+id/search_btn"
+        android:layout_alignBottom="@id/search_field"
+        android:layout_alignRight="@id/search_field"
+        android:layout_alignTop="@id/search_field"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingBottom="@dimen/paddingItemDefault"
+        android:src="@drawable/ic_search"/>
+
+    <ImageView
+        android:layout_above="@+id/search_field"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_margin_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_app_logo_medium"/>
+
+    <TextView
+        android:id="@+id/trending_movies_label"
+        android:layout_below="@id/search_field"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/trending_movies_label"
+        android:textColor="@color/dark_gray"/>
+
+    <TextView
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/ic_nav_next"
+        android:gravity="end"
+        android:id="@+id/trending_movies_all"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_field"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_margin_half"
+        android:layout_toRightOf="@id/trending_movies_label"
+        android:layout_width="wrap_content"
+        android:text="@string/trending_movies_all_label"
+        android:textColor="@color/gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:clipToPadding="false"
+        android:id="@+id/recycler_trending_movies"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/trending_movies_label"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin_half"
+        android:layout_width="wrap_content"/>
+</RelativeLayout>
